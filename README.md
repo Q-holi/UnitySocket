@@ -8,11 +8,12 @@
 개인적으로 공부를 하고 싶은 부분인 C#으로 코딩을 하였습니다.  
 지금까지의 프로젝트 모든것이 Unity 기반으로 프로젝트를 진행하여서 이번 TCP/IP 프로젝트 또한 Unity를 사용하였습니다.  
 개발 예정인 프로젝트는 소켓 통신을 이용한 멀티 플레이 게임 3D (2D로 전환 가능) 입니다.  
-###Project Contents  
-Development Personnel : 1    
+
+### 프로젝트 설명
+프로젝트 참여 인원 : 1    
 Source Coding : 윤승원  
  
-_Development Environment_  
+_프로젝트 사용 기술(버전)_
 1. Unity Engine  
 2. Unity 2020.2.1f1 License  
 3. Visual Studio 2019  
