@@ -58,8 +58,8 @@ public static void Start(int _maxPlayers, int _port)//Program에서 받은 최�
 
 
 References  
-URL : https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA
-URL : https://www.youtube.com/channel/UCjCpZyil4D8TBb5nVTMMaUw
+URL : https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA  
+URL : https://www.youtube.com/channel/UCjCpZyil4D8TBb5nVTMMaUw  
 URL : https://www.youtube.com/channel/UCa-mDKzV5MW_BXjSDRqqHUw 이쪽 영상을 대부분 참고 하였습니다.  
 많은 자료들이 Unity자체적인 기반을 사용하였으나 Socket 통신을 사용하는 자료중에서도 정리가 잘 되어있는 부분이었습니다.  
 
