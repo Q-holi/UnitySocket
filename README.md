@@ -60,7 +60,7 @@ public static void Start(int _maxPlayers, int _port)//Program에서 받은 최�
   
 _설명_|_실행화면_|_문제점(어려운 부분)_ 
 :---:|:---:|:---:
-*서버 입장* | ![ServerConnect](https://github.com/Q-holi/UnitySocket/blob/master/GameClient/IMG/connectServer.gif)|1. 서버 실행과 입장하는 부분은<br>큰 어려움은 없었습니다.
+*서버 입장* | ![ServerConnect](https://github.com/Q-holi/UnitySocket/blob/master/GameClient/IMG/connectServer.gif)|서버 실행과 입장하는 부분은<br>큰 어려움은 없었습니다.
 
 
 
