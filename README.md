@@ -64,6 +64,7 @@ _설명_|_실행화면_|_문제점(어려운 부분)_
 
 
 References  
+Port : https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers 여유 포트 번호 확인  
 URL : https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA  
 URL : https://www.youtube.com/channel/UCjCpZyil4D8TBb5nVTMMaUw  
 URL : https://www.youtube.com/channel/UCa-mDKzV5MW_BXjSDRqqHUw 이쪽 영상을 대부분 참고 하였습니다.  
