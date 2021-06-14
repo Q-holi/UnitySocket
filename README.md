@@ -56,11 +56,17 @@ public static void Start(int _maxPlayers, int _port)//Program에서 받은 최�
 *클라이언트와 서버의 통신은 TCP로 하고 있습니다. 그러나 클라이언트에서 플레이어의 움직임을 통신할 때 UDP를 사용합니다.*  
 *아직 추가적인 내용을 이해하는 중에 있어서 왜 UDP를 사용하였는지 찾아보는 중입니다.*    
 
+  
+_설명_|_실행화면_|_문제점(어려운 부분)_ 
+:---:|:---:|:---:
+*서버 입장* | ![ServerConnect](https://github.com/Q-holi/UnitySocket/blob/master/GameClient/IMG/connectServer.gif)|1. 서버 실행과 입장하는 부분은<br>큰 어려움은 없었습니다.
+
+
 
 References  
 URL : https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA  
 URL : https://www.youtube.com/channel/UCjCpZyil4D8TBb5nVTMMaUw  
 URL : https://www.youtube.com/channel/UCa-mDKzV5MW_BXjSDRqqHUw 이쪽 영상을 대부분 참고 하였습니다.  
-많은 자료들이 Unity자체적인 기반을 사용하였으나 Socket 통신을 사용하는 자료중에서도 정리가 잘 되어있는 부분이었습니다.  
+많은 자료들이 Unity자체적인 기반을 사용하였으나 Socket 통신을 사용하는 자료중에서도 정리가 잘 되어있었습니다.
 
 
