@@ -78,33 +78,18 @@ public static void Start(int _maxPlayers, int _port)//Program에서 받은 최�
 ------------------------------------------------------------------------------------------------------
 [ServerHandle.cs]
 ```C#
-class ServerHandle
-    {
-        public static void WelcomeReceived(int _fromClient, Packet _packet)
+public static void WelcomeReceived(int _fromClient, Packet _packet)
         {
-            int _clientIdCheck = _packet.ReadInt();
-            string _username = _packet.ReadString();
+            int _clientIdCheck = _packet.ReadInt();//서버에 접속 시 클라이언트 Id 받아온다. 
+            string _username = _packet.ReadString();//클라이언트 에서 만든 username 받아온다.
 
             Console.WriteLine($"{Server.clients[_fromClient].tcp.socket.Client.RemoteEndPoint} connected successfully and is now player{_fromClient}.");
             if(_fromClient != _clientIdCheck)
             {
                 Console.WriteLine($"Player \"{_username}\"(ID: {_fromClient}) has assumed the wrong client ID ({_clientIdCheck})!");
-            }
-            Server.clients[_fromClient].SendIntoGame(_username);
+            }//서버의 들어온 순서 중 그 순서의 ID와 다르면 에러발생!!
+            Server.clients[_fromClient].SendIntoGame(_username);//정상적으로 클라이언트가 서버에 접속하면 플레이어 생성을 해준다. 
         }
-
-        public static void PlayerMovement(int _fromClient, Packet _packet)
-        {
-            bool[] _inputs = new bool[_packet.ReadInt()];
-            for (int i = 0; i < _inputs.Length; i++)
-            {
-                _inputs[i] = _packet.ReadBool();
-            }
-            Quaternion _rotation = _packet.ReadQuaternion();
-
-            Server.clients[_fromClient].player.SetInput(_inputs, _rotation);
-        }
-    }
 ```  
 ------------------------------------------------------------------------------------------------------  
  
