@@ -85,8 +85,8 @@ _설명_|_실행화면_|_문제점(어려운 부분)_
 *ID<br>부여* | ![GiveId](https://github.com/Q-holi/UnitySocket/blob/master/GameClient/IMG/makeid.gif)|서버에 접속하는 순서대로 Dictionary에 Player저장  
 *랜덤스폰* | ![RandomSpawn](https://github.com/Q-holi/UnitySocket/blob/master/GameClient/IMG/randomspawn.gif)|서버에 들어오면 랜덤하게 X좌표값정하서 스폰  
 
-
-
+_실행 방법_  
+GameServer실행 시킨 후 GameClient/Build 에 있는 게임 실행 파일을 실행  
 References  
 Port : https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers 여유 포트 번호 확인  
 URL : https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA  
