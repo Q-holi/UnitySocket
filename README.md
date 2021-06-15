@@ -19,7 +19,7 @@
 3. [개인별 클라이언트에서는 본인은 localPlayer 이고 다른 나머지 인원들은 Player]
 
 기능 <미구현> [구현예정]
-1. [랜덤한 위치에 플레이어들이 스폰] -> 스폰 구현(0) 랜덤 위치 (x)  
+1. [랜덤한 위치에 플레이어들이 스폰] -> 스폰 구현(0) 랜덤 위치 (0z)  
 2. [각 플레이어들이 배틀로얄 진행] -> 미구현
 3. [최종 우승자 판별] -> 미구현
 
@@ -83,6 +83,7 @@ _설명_|_실행화면_|_문제점(어려운 부분)_
 :---:|:---:|:---:
 *서버<br>입장* | ![ServerConnect](https://github.com/Q-holi/UnitySocket/blob/master/GameClient/IMG/connectServer.gif)|서버 실행과 입장하는 부분은<br> 큰 어려움은 없었습니다.
 *ID<br>부여* | ![GiveId](https://github.com/Q-holi/UnitySocket/blob/master/GameClient/IMG/makeid.gif)|서버에 접속하는 순서대로 Dictionary에 Player저장  
+*랜덤스폰* | ![RandomSpawn](https://github.com/Q-holi/UnitySocket/blob/master/GameClient/IMG/randomspawn.gif)|서버에 들어오면 랜덤하게 X좌표값정하서 스폰  
 
 
 
