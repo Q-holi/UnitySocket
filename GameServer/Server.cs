@@ -112,12 +112,12 @@ namespace GameServer
         {
             for (int i = 1; i <= MaxPlayers; i++)
             {
-                clients.Add(i, new Client(i));
+                clients.Add(i, new Client(i));//최대 인원수 만큼 클라이언트 생성 
             }
 
             packetHandlers = new Dictionary<int, PacketHandler>()
             {
-                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
+                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },//클라이언트 접속 시 방문 메세지와 플레이어 생성
                 { (int)ClientPackets.playerMovement, ServerHandle.PlayerMovement },
             };
             Console.WriteLine("Initialized packets.");

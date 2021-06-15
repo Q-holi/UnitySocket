@@ -10,7 +10,6 @@ namespace GameServer
     class Client
     {
         public static int dataBufferSize = 4096;
-
         public int id;
         public Player player;
         public TCP tcp;
@@ -166,7 +165,10 @@ namespace GameServer
 
         public void SendIntoGame(string _playerName)
         {
-            player = new Player(id, _playerName, new Vector3(0, 0, 0));//플래이어 생성 
+            Random r = new Random();
+            int randX = r.Next(30);// 플레이어 X좌표 0~30 까지 랜덤한 위치에 생성 해주기
+
+            player = new Player(id, _playerName, new Vector3(randX, 0, 0));//플래이어 생성 
 
             foreach(Client _client in Server.clients.Values)
             {

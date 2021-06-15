@@ -5,13 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
+    
     public static Dictionary<int, PlayerManager> players = new Dictionary<int, PlayerManager>();
     //플레이어 정보를 클라이언트 쪽에 저장한다.
-
     public GameObject localPlayerPrefab;
     public GameObject playerPrefab;
-
+    
     private void Awake()
     {
         if (instance == null)
