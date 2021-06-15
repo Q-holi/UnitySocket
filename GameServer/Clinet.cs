@@ -23,7 +23,7 @@ namespace GameServer
         }//클라이언트 선언과 동시에 id와 TCP 통신과 UDP 통신 형태 2가지로 생성한다.
         public class UDP
         {
-            public IPEndPoint endPoint;
+            public IPEndPoint endPoint;//IP번호와 Port번호
 
             private int id;
 
