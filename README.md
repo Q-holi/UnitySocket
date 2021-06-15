@@ -74,9 +74,39 @@ public static void Start(int _maxPlayers, int _port)//Program에서 받은 최�
 
             Console.WriteLine($"Server started on port {Port}.");
         }
-```    
-*클라이언트와 서버의 통신은 TCP로 하고 있습니다. 그러나 클라이언트에서 플레이어의 움직임을 통신할 때 UDP를 사용합니다.*  
-*아직 추가적인 내용을 이해하는 중에 있어서 왜 UDP를 사용하였는지 찾아보는 중입니다.*    
+```   
+------------------------------------------------------------------------------------------------------
+[ServerHandle.cs]
+```C#
+class ServerHandle
+    {
+        public static void WelcomeReceived(int _fromClient, Packet _packet)
+        {
+            int _clientIdCheck = _packet.ReadInt();
+            string _username = _packet.ReadString();
+
+            Console.WriteLine($"{Server.clients[_fromClient].tcp.socket.Client.RemoteEndPoint} connected successfully and is now player{_fromClient}.");
+            if(_fromClient != _clientIdCheck)
+            {
+                Console.WriteLine($"Player \"{_username}\"(ID: {_fromClient}) has assumed the wrong client ID ({_clientIdCheck})!");
+            }
+            Server.clients[_fromClient].SendIntoGame(_username);
+        }
+
+        public static void PlayerMovement(int _fromClient, Packet _packet)
+        {
+            bool[] _inputs = new bool[_packet.ReadInt()];
+            for (int i = 0; i < _inputs.Length; i++)
+            {
+                _inputs[i] = _packet.ReadBool();
+            }
+            Quaternion _rotation = _packet.ReadQuaternion();
+
+            Server.clients[_fromClient].player.SetInput(_inputs, _rotation);
+        }
+    }
+```  
+ 
 
   
 _설명_|_실행화면_|_문제점(어려운 부분)_ 
